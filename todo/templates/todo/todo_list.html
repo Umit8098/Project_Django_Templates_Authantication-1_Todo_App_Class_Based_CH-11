@@ -1,0 +1,107 @@
+{% extends "todo/base.html" %}
+
+{% block title %} Todos {% endblock title %}
+
+{% block content %}
+
+<!-- add button -->
+
+<div class="col-lg-1 mx-auto p-1 mt-3 d-flex justify-content-center">
+  <a href="{% url 'todo:add' %}" target="_blank" class="mx-2">
+      <input type="submit" value="ADD TODO" class="btn btn-danger btn-outline-light">
+  </a>
+  <a href="{% url 'todo:home' %}" class="mx-2">
+      <input type="submit" value="TODO HOME" class="btn btn-danger btn-outline-light">
+  </a>
+</div>
+
+
+<div class="container pt-4">
+
+  <div class="col">
+    <div class="border">
+      {% if todos|length == 0 %}
+      <div class="p-4">
+        <br>
+        <br>
+        <div class="alert alert-danger text-center">
+          <p class="" style="font-size: 30px;">ToDo Lists</p>
+        </div>
+        <br>
+        <br>
+      </div>
+      {%else%}
+      <div class="p-2">
+        <table class="table table-hover">
+          <thead>
+            <tr>
+              <th>No</th>
+              <th>Title</th>
+              <th>Is_Done?</th>
+              <th>Status</th>
+              <th>Priority</th>
+              <th>Delete</th>
+              <th>Update</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for todo in todos%}
+              <tr>
+                <td>{{forloop.counter}}</td>
+                <td>{{todo.title}}</td>
+                
+                {% if todo.is_done == True %}
+                  <td>
+                    ✅
+                  </td>
+                {% else %}
+                  <td>
+                    💤
+                  </td>
+                {% endif %}
+
+                {% if todo.status == 'C'%}
+                  <td>
+                    ✅
+                  </td>
+                {% elif todo.status == 'I'%}
+                  <td>
+                    🚧
+                  </td>
+                {% elif todo.status == 'P'%}
+                  <td>
+                    💤
+                  </td>
+                {%endif%}
+                <td>
+                  {% if todo.priority == '1'%}
+                    1️⃣
+                  {%elif todo.priority == '2'%}
+                    2️⃣
+                  {%elif todo.priority == '3'%}
+                    3️⃣
+                  {%elif todo.priority == '4'%}
+                    4️⃣
+                  {%elif todo.priority == '5'%}
+                    5️⃣
+                  {%endif%}
+                </td>
+                <td>
+                  <a href="{% url 'todo:delete' todo.id %}" target="_blank" title="Delete" class="">🗑️</a> 
+                </td>
+                <td>
+                  <a href="{% url 'todo:update' todo.id %}" target="_blank"  class="">⚙️</a> 
+                </td>
+              </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+      {%endif%}
+    </div>
+
+  </div>
+
+</div>
+
+{% endblock content %}

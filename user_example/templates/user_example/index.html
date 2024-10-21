@@ -1,0 +1,27 @@
+{% extends "todo/base.html" %}
+{% block content %}
+    
+
+{% if user.is_authenticated %} 
+<h1 style="text-align: center; color:red; margin-top: 5rem;">
+    Hello {{user.username | title}}    
+</h1>
+
+<div class="d-flex justify-content-center align-items-center" style="height: 200px;">
+    <a href="{% url 'todo:home' %}" class="btn btn-success btn-lg">Go to TODO page</a>
+</div>
+
+{% else %}
+<h1 style="text-align: center; color:purple; margin-top: 5rem;">
+    Hello, please login to see TODO_APP page.
+</h1>
+
+<div class="d-flex justify-content-center align-items-center" style="height: 200px;">
+    <a href="{% url 'login' %}" class="btn btn-primary btn-lg">Go to TODO_APP</a>
+</div>
+
+
+{% endif %}
+
+{% endblock content %}
+

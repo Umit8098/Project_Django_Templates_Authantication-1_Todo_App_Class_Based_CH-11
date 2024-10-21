@@ -1,0 +1,26 @@
+{% extends 'todo/base.html' %}
+
+{% block title %} Add {% endblock title %}
+
+{% block content %}
+
+<div class="container pt-4">
+    <div class="col-lg-6 mx-auto p-0 shadow">
+      <div class="alert alert-warning text-center">
+        <h2>Add Todo</h2>
+      </div>
+  
+      <div class="p-4 d-flex align-items-center">
+        {% load crispy_forms_tags %}
+        <form action="" method="post">
+          {% csrf_token %} {% comment %} {{ form.as_p }} {% endcomment %} {{ form | crispy }}
+          <input type="submit" value="Add" class="btn btn-success" />
+          <a href="{% url 'todo:home' %}"
+            ><input type="button" value="CANCEL" class="btn btn-danger btn-outline-light"
+          /></a>
+        </form>
+      </div>
+    </div>
+  </div>
+
+{% endblock content %}

@@ -1068,7 +1068,7 @@ rm -rf klkf.txt
 - pythonanywhere deki bash terminale;
 
 ```bash
-git clone https://github.com/Umit8098/Project_Django_Rest_Framework_Rent_A_Car_App_CH-12.git
+git clone https://github.com/Umit8098/Project_Django_Templates_Authantication-1_Todo_App_Class_Based_CH-11.git
 ```
 
 - project imizi pythonanywhere clonladık.
@@ -1089,6 +1089,22 @@ git clone https://github.com/Umit8098/Project_Django_Rest_Framework_Rent_A_Car_A
 - python3 -m venv env  # python -m venv env 
 - source env/bin/activate
 - pip install -r requirements.txt
+```
+
+- Eğer paketlerden bir veya birkaçı için şöyle bir hata alınırsa;
+```bash
+No matching distribution found for Django==5.1.1 (from -r requirements.txt (line 3))
+```
+
+- Paketin upgrade versiyonunu yüklüyoruz. Bazen pythoneanywhere paketleri geriden takip edebiliyor. ugrade yapınca aslında bize göre önceki versiyonlarından ancak kendisine göre en güncel versiyonlarından birini yüklüyor.
+```bash
+- pip install django --upgrade
+```
+
+- Daha sonra pip freeze yapıp geri kaln paketleri manuel olarak versiyonları ile birlikte yükleyebiliriz.
+```bash
+- pip install crispy-bootstrap5==2024.2
+- django-crispy-forms==2.3
 ```
 
   - pythonanywhere -> dashboard -> Web -> Add a new web app -> next -> Manual configuration (including virtualenvs) -> Python 3.10 (python versionu) -> next

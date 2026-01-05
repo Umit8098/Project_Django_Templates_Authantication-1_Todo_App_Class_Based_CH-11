@@ -18,17 +18,16 @@ A full-stack Todo application built with Django Templates and Class-Based Views.
 <div align="center">
   <h3>
     <a href="https://umit8105.pythonanywhere.com/">
-      Demo
+      🖥️ Live Demo
     </a>
      | 
     <a href="https://github.com/Umit8098/Project_Django_Templates_Authantication-1_Todo_App_Class_Based_CH-11.git">
-      Project
+      📂 Project
     </a>
  
   </h3>
 </div>
 
-<!-- TABLE OF CONTENTS -->
 
 ## Navigation
 

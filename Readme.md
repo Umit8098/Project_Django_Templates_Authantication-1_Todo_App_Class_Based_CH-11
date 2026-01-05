@@ -1,7 +1,19 @@
 <!-- Please update value in the {}  -->
 
-<h1 align="center">Project_Django_Template_Todo_App (With_Class_Based_View)</h1>
+<p align="center">
+  <img src="https://img.shields.io/badge/Django-5.x-092E20?logo=django&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Python-3.x-3776AB?logo=python&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Class--Based_Views-CBV-blue"/>
+  <img src="https://img.shields.io/badge/Authentication-Session--Based-success"/>
+  <img src="https://img.shields.io/badge/Bootstrap-5-7952B3?logo=bootstrap&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Deployment-PythonAnywhere-purple"/>
+</p>
 
+<h1 align="center">✅ Django Template Todo App</h1>
+
+<p align="center">
+A full-stack Todo application built with Django Templates and Class-Based Views.
+</p>
 
 <div align="center">
   <h3>
@@ -9,7 +21,7 @@
       Demo
     </a>
      | 
-    <a href="https://umit8105.pythonanywhere.com/">
+    <a href="https://github.com/Umit8098/Project_Django_Templates_Authantication-1_Todo_App_Class_Based_CH-11.git">
       Project
     </a>
  
@@ -18,9 +30,8 @@
 
 <!-- TABLE OF CONTENTS -->
 
-## Table of Contents
+## Navigation
 
-- [Table of Contents](#table-of-contents)
 - [Overview](#overview)
 - [Built With](#built-with)
 - [How To Use](#how-to-use)
@@ -31,7 +42,9 @@
 <!-- OVERVIEW -->
 
 ## Overview
-- Todo App Authenticate
+
+This Todo application allows authenticated users to create, update, and manage their tasks using a clean and simple interface built with Django Templates.
+
 ![screenshot](project_screenshot/Todo_App_Temp-1.gif)
 
 ---
@@ -45,7 +58,6 @@
 <!-- This section should list any major frameworks that you built your project using. Here are a few examples.-->
 
 - Django Templates
-- JavaScript
 - Bootstrap5
 - HTML
 - CSS
@@ -60,11 +72,6 @@ When installing the required packages in the requirements.txt file, review the p
 
 Complete the installation by uncommenting the appropriate package.
 
----
-
-requirements.txt dosyasındaki gerekli paketlerin kurulumu esnasında windows/macOS/Linux ortamları için paket farklılıklarını inceleyin. 
-
-Uygun olan paketi yorumdan kurtararak kurulumu gerçekleştirin.
 
 ```bash
 # Clone this repository
@@ -93,16 +100,14 @@ SECRET_KEY =123456789abcdefg...
 ```
 
 ## About This Project
-- Todo Application.
 
-<hr>
+This project is a full-stack Todo application where users can securely manage their tasks after authentication.  
+It is built using Django Templates and Class-Based Views to demonstrate clean architecture and reusable components.
 
-- Todo Application
 
 ## Acknowledgements
 - [Bootstrap5](https://getbootstrap.com/) - CSS framework
 - [crispy-forms](https://django-crispy-forms.readthedocs.io/en/latest/) - form CSS framework
-- [dj-rest-auth](https://dj-rest-auth.readthedocs.io/en/latest/) - for authentication
 
 ## Contact
 

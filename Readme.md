@@ -22,7 +22,7 @@ A full-stack Todo application built with Django Templates and Class-Based Views.
     </a>
      | 
     <a href="https://github.com/Umit8098/Project_Django_Templates_Authantication-1_Todo_App_Class_Based_CH-11.git">
-      📂 Project
+      📂 Repository
     </a>
  
   </h3>
